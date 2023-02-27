@@ -1,11 +1,33 @@
 #border {
-    border: 0.5rem outset pink;
-    outline: 0.5rem solid khaki;
-    box-shadow: 0 0 0 2rem skyblue;
+    border: 0.5rem outset rgb(195, 13, 43);
     border-radius: 12px;
     font: bold 1rem sans-serif;
     margin: 2rem;
     padding: 1rem;
     outline-offset: 0.5rem;
   }
-  
+#border-left{
+  border-left: 4px dashed blue;
+  background-color: gold;
+  height: 100px;
+  width: 100px;
+  font-weight: bold;
+  text-align: center;
+
+}
+#border-right{
+  border-right: 4px dashed rgb(255, 17, 0);
+  background-color: gold;
+  height: 100px;
+  width: 100px;
+  font-weight: bold;
+  text-align: center;
+  }
+  #border-top{
+    border-top: 4px dashed blue;
+    background-color: gold;
+    height: 100px;
+    width: 100px;
+    font-weight: bold;
+    text-align: center;
+    }
