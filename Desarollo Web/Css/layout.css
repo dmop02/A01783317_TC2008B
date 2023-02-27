@@ -61,7 +61,7 @@ body, html{
     grid-column: 1 / 4 ;
 }
 #grid-conten{
-    grid-row:  4 / -1;
+    grid-column:  4 / -1;
 }
 #grid-contentt{
     grid-column: 1 / 3;
