@@ -23,11 +23,93 @@
   font-weight: bold;
   text-align: center;
   }
-  #border-top{
-    border-top: 4px dashed blue;
-    background-color: gold;
-    height: 100px;
-    width: 100px;
-    font-weight: bold;
-    text-align: center;
-    }
+#border-top{
+  border-top: 4px dashed blue;
+  background-color: gold;
+  height: 100px;
+  width: 100px;
+  font-weight: bold;
+  text-align: center;
+  }
+#border-bottom{
+  border-bottom: 4px dashed blue;
+  background-color: gold;
+  height: 110px;
+  width: 100px;
+  font-weight: bold;
+  text-align: center;
+  }
+#border-radius{
+  border: dotted;
+  border-width: 10px 4px;
+  border-radius: 100px 80px;
+  }
+#background-image{
+  background-image: url(../imagenesGit/luffy.jpeg);
+  background-color: #ccc ;
+  height: 500px;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#background-color{
+  background-color: rgb(215, 19, 19);
+
+}
+#font{
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+#font-fam{
+  font-family: 'Times New Roman', Times, serif;
+}
+#font-style{
+  font-style: italic;
+}
+#font-weight{
+  font-weight: bold;
+
+}
+#width{
+  width: 100px;
+}
+#height{
+  height: 100px;
+}
+#list-style{
+  list-style: square;
+  list-style-type: disc;
+
+}
+#margin{
+  margin: 25px 50px 75px;
+}
+#padding{
+  padding: 25px 50px 75px;
+
+}
+#overflow{
+  width: 12em;
+  border: dotted;
+  overflow: visible;
+}
+#display{
+  display: block;
+}
+.box{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: red;
+  color: white;
+}
+#one {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  background: blue;
+}
+#filter {
+  filter: grayscale(75%);
+}
+
