@@ -23,16 +23,37 @@ body, html{
     background-color: rgb(49, 121, 146);
     
 }
+#h{
+    background-color: aquamarine;
+}
+#h1{
+    background-color: aqua;
+}
+#h2{
+    background-color: blanchedalmond;
+}
+#h3{
+    background-color: rgb(93, 173, 77);
+}
+#h4{
+    background-color: blue;
+}
+#h5{
+    background-color: blueviolet;
+}
 #grid-header{
     grid-column: 1/-1 ;
+    background-color: aquamarine;
 }
 #grid-content{
     grid-row:  2/ 4;
     grid-column: 1/ 2;
+    background-color: bisque;
 }
 #grid-content1{
     grid-row:  2/ 3;
     grid-column: 2 /-1 ;
+    background-color: rgb(128, 82, 25);
 }
 .grid-container1{
     padding: 10px;
@@ -59,18 +80,23 @@ body, html{
 }
 #grid-header3{
     grid-column: 1 / 4 ;
+    background-color: blue;
 }
 #grid-conten{
     grid-column:  4 / -1;
+    background-color: blueviolet;
 }
 #grid-contentt{
     grid-column: 1 / 6;
+    background-color: rgb(128, 82, 25);
 }
 #bar3{
     grid-column: 6 / -1;
+    background-color: rgb(59, 121, 69);
 }
 #grid-footer1{
     grid-column: 1 / -1;
+    background-color: rgb(9, 174, 36);
 }
 .grid-container2{
     padding: 5px;
