@@ -27,6 +27,9 @@ public class createballs : MonoBehaviour
         //Create copy of prefab 
         GameObject obj = Instantiate(ball, pos, Quaternion.identity);
         //Boom object after certain period of time (This case 5 sec)
-        Destroy(obj, 5);
+        //Destroy(obj, 5);
+    }
+    public void StopBalls(){
+        CancelInvoke("Dropball");
     }
 }

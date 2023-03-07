@@ -5,6 +5,7 @@ using UnityEngine;
 public class Ballin : MonoBehaviour
 {
     [SerializeField] Score scoreObj;
+    
     // Start is called before the first frame update
     void Start()
     {
