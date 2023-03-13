@@ -1,0 +1,12 @@
+#lang racket
+(define x (list 10 60 3 55 15 45 40))
+
+(define (sum x)
+    (if (null? x)
+        0
+        (+ (car x) (sum (cdr x)))))
+
+(define (average x)
+    (/ (sum x) (length x)))
+
+(display (exact->inexact (average x)) (current-output-port))
