@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="../css/eventos_dom.css">
-    <script type="module" src="../js/eventos_dom.js"></script>
+    <script type="module" src="../Javascript/preguntas.js"></script>
     <title>Eventos y Dom</title>
 </head>
 
 <body>
     <h1>Eventos y DOM y ChatGPT</h1>
-
+    <h4>Domingo Mora | A01783317</h4>
+    <h5>Construcción de software y toma de decisiones (Gpo 401)</h5>
     <div class="container">
         <h2>Instrucciones</h2>
         <p>Utiliza ChatGPT y github Copilot para resolver la siguiente actividad. Antes de hacer los ejercicios, contesta las siguientes preguntas. Pregúntale a ChatGPT las preguntas, y verifica que lo que haya generado es correcto. Cuando sea necesario, agrega un ejemplo de código. Incluye una fuente que valide o invalide lo que generó. Agrega elementos de HTML con tus respuestas. (<b>Protip</b>: usa ChatGPT para que las respuestas las ponga directamente en elementos de html.)</p>
@@ -21,14 +22,54 @@
         <h3>Preguntas</h3>
         <ol>
             <li>¿Qué es el DOM?</li>
+            <p> <u>ChatGPT:</u> El DOM (acrónimo de Document Object Model) es una representación estructurada y jerárquica de un documento HTML, XHTML o XML en forma de árbol. El DOM es una interfaz de programación de aplicaciones (API) que permite a los desarrolladores web acceder y manipular los elementos y contenidos del documento web, incluyendo HTML, CSS y JavaScript, utilizando lenguajes de programación como JavaScript.
+                </p>
+                <p><div>El DOM organiza el contenido del documento en una estructura de árbol, donde cada nodo representa un elemento, atributo o texto dentro del documento. Los desarrolladores pueden utilizar el DOM para acceder y modificar el contenido y la estructura de la página web, lo que permite crear páginas web dinámicas y interactivas.
+                </div></p>
+                El DOM también permite la manipulación de eventos en la página web, como hacer clic en un botón o enviar un formulario. Al interactuar con el DOM mediante eventos, los desarrolladores pueden crear aplicaciones web interactivas y altamente funcionales.</p>
+            <p><u>Copilot:</u> </p>
+            - El DOM es una API (interfaz de programación de aplicaciones) definida por el Consorcio World Wide Web (W3C) para acceder y modificar documentos XML.
+            <p></p>
+            - El DOM es una utilidad disponible para la mayoría de lenguajes de programación (JavaScript, Java, PHP, Python) y cuyas únicas diferencias se encuentran en la forma de implementarlo.
+            <p></p>
+            - El DOM permite a los desarrolladores frontend:
+            <p></p>
+            - acceder y manipular **elementos HTML**
+            <div></div>
+            - acceder y manipular **atributos HTML**
+            <p></p>
+            - acceder y manipular **estilos CSS**
+            <p></p>
+            - **agregar** nuevos elementos y atributos HTML
+            <p></p>
+            - **eliminar** elementos y atributos HTML
+         <p></p>
+            - **reaccionar** a eventos HTML existentes en la página
+            
             <li>¿Qué es un nodo?</li>
+            <p><u>ChatGPT:</u> Un nodo es un elemento básico en una estructura de datos jerárquica, como un árbol, una lista enlazada o un grafo. En el contexto del DOM, cada elemento en un documento HTML, XML o XHTML es un nodo, organizado en una estructura jerárquica de árbol. Cada nodo puede tener cero o más nodos hijos y un solo nodo padre, y pueden representar elementos HTML, atributos, comentarios, textos y otros tipos de nodos. En el ámbito de las redes, un nodo se refiere a cualquier dispositivo conectado a la red.</p>
+            <p><u>Copilot:</u> Un nodo es un objeto que representa un elemento, atributo, texto, comentario, etc. dentro del árbol DOM. Los nodos se pueden crear, eliminar, modificar, etc. a través de la API del DOM.</p>
             <li>¿Cómo se accede a un elemento del DOM?</li>
+            <p><u>ChatGPT: </u> Para acceder a un elemento del DOM se pueden utilizar los métodos querySelector() o getElementById(). querySelector() devuelve el primer elemento que coincide con un selector CSS, mientras que getElementById() devuelve el elemento con un atributo id específico. Una vez que se accede a un elemento, se pueden manipular sus propiedades y atributos con JavaScript. </p>
+            <p><u>Copilot:</u> Para acceder a un elemento del DOM, se utiliza el método getElementById, que recibe como parámetro el id del elemento. Este método devuelve un objeto de tipo Element, que representa el elemento del DOM. </p>
             <li>¿Cómo se modifica un elemento del DOM?</li>
+            <p><u>ChatGPT:</u> Para modificar un elemento del DOM se pueden utilizar propiedades y métodos en JavaScript. Algunas formas comunes incluyen la modificación del contenido con innerHTML, la modificación del valor de un atributo con setAttribute(), la modificación del estilo con style, y la adición o eliminación de clases con classList.add() o classList.remove(). Hay muchas otras propiedades y métodos disponibles para realizar diferentes tipos de modificaciones en el DOM. </p>
+            <p><u>Copilot:</u> Para modificar un elemento del DOM, se puede utilizar el método setAttribute(), que recibe como parámetro el nombre del atributo y el valor que se le quiere asignar. </p>
             <li>¿Cuál es la diferencia entre getElementby* y querySelector*?</li>
+            <p><u>ChatGPT:</u> La principal diferencia entre getElementby* y querySelector* es que getElementby* devuelve un único elemento que coincide con el criterio de búsqueda, mientras que querySelector* devuelve una lista de todos los elementos que coinciden con un selector CSS especificado. Además, querySelector* es más útil para búsquedas complejas utilizando selectores CSS, mientras que getElementby* es más útil para seleccionar un elemento específico por ID o etiqueta. En términos de velocidad, getElementby* es más rápido que querySelector*.</p>
+            <p><u>Copilot:</u> getElementById() devuelve el elemento con un atributo id específico, mientras que querySelector() devuelve el primer elemento que coincide con un selector CSS. getElementById() es más rápido que querySelector(), pero querySelector() es más flexible y puede seleccionar elementos basados en cualquier atributo, no solo id. </p>
             <li>¿Qué es un evento?</li>
+            <p><u>ChatGPT:</u> Un evento es una acción que ocurre en una página web, como hacer clic en un botón o cargar una página, y permite que las páginas web respondan a la interacción del usuario y realicen acciones en consecuencia. En JavaScript, se pueden utilizar los eventos para ejecutar una función en respuesta a una acción del usuario o a algún otro tipo de evento en la página, y se pueden agregar a los elementos del DOM utilizando el método addEventListener(). </p>
+            <p><u>Copilot:</u> Un evento es cualquier acción o interacción que ocurre en un documento HTML. Por ejemplo, un evento puede ser el clic de un botón, el movimiento del mouse, el envío de un formulario, etc. Los eventos se pueden detectar y manipular con JavaScript, lo que permite crear páginas web interactivas y dinámicas. </p>
             <li>¿Qué es un listener?</li>
+            <p><u>ChatGPT:</u> Un listener es una función que se asocia con un evento y se ejecuta en respuesta a ese evento. Se utilizan en JavaScript para responder a la interacción del usuario con la página web y realizar acciones en consecuencia. Para agregar un listener a un evento en JavaScript, se utiliza el método addEventListener(), y se puede eliminar el listener utilizando el método removeEventListener(). </p>
+            <p><u>Copilot:</u> Un listener es una función que se ejecuta cuando un evento ocurre. Los listeners se pueden agregar a los elementos del DOM utilizando el método addEventListener(). </p>
             <li>¿Qué es un callback?</li>
+            <p><u>ChatGPT:</u> Un callback es una función que se pasa como argumento a otra función y se ejecuta en un momento posterior en la ejecución del programa. Los callbacks se utilizan comúnmente en JavaScript para implementar código asíncrono y manejar eventos en la página web. Se pueden proporcionar funciones de callback para manejar eventos como clics en un botón o para recibir datos de una solicitud AJAX.</p>
+            <p><u>Copilot:</u> Un callback es una función que se pasa a otra función como un argumento, que luego se invoca dentro de la función externa para completar alguna acción. Los callbacks se utilizan en JavaScript para ejecutar código después de que se complete una acción asíncrona, como una petición HTTP. </p>
             <li>¿Qué es un objeto de evento?</li>
+            <p><u>ChatGPT:</u> Un objeto de evento es creado cuando se produce un evento en la página web y contiene información sobre el evento y sus propiedades. Es pasado como un parámetro a la función de callback asociada al evento en JavaScript. Contiene información como el tipo de evento, el elemento del DOM que desencadenó el evento y las coordenadas del puntero del mouse en el momento del evento. La variable "event" se utiliza para acceder al objeto de evento en la función de callback. </p>
+            <p><u>Copilot:</u> Un objeto de evento es un objeto que contiene información sobre un evento específico. Los objetos de evento se crean automáticamente por el navegador cuando ocurre un evento, y se pueden utilizar para acceder a información sobre el evento, como el elemento que desencadenó el evento, la posición del mouse, etc. </p>
         </ol>        
     </div>
 
@@ -113,9 +154,13 @@
         <h2>Conclusiones</h2>
 
         <h4>Experiencia general</h4>
+        <a> Mi experiencia al realizar esta actividad fue medio confusa porque nos piden usar herramientas externas para resolver nuestro trabajo. Fue una actividad facil pero al mismo tiempo tienes que pensar en el output que te dan estas herramientas.</a>
         <h4>¿Cuándo y para qué usarías ChatGPT y cuándo Copilot?</h4>
+        <a> Usaria cualquiera de los dos para hacer consultas y resolver dudas que vayan saliendo a lo largo de mi desrollo como progamador. Pero no pienso en utilizar estas herramientas para entregas ya que las respuestas pueden fallar o quedar a medias</a>
         <h4>Ventajas de usar AI para programar</h4>
+        <a> Para programas simples como los ejercicios arriba es muy util para ser efectivo. Commands simples que ya se utilizan en varias paginas web, gracias a estos sistemas me puedo ahorrar tiempo y usarlo para tareas mas fastidiosas</a>
         <h4>Desventajas de usar AI para programar</h4>
+        <a> No siempre es correcto el output que dan estos sistemas. En dado caso para ejercicios simples es muy util pero debo de tener cuidado al usarlos por este simple hecho. El sistema es relativamente nuevo y al igual que yo; tiene que seguir aprendiendo</a>
     </div>
 
 </body>
